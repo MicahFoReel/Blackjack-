@@ -1,0 +1,83 @@
+html{
+    font-family: roboto;
+}
+.title.is-1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+#playerScoreContainer, #dealerScoreContainer {
+    display: flex;
+}
+.card{
+    margin: 3px;
+    width: 60px;
+}
+#select{
+    margin-top: 3px;
+}
+
+#playArea{
+    width: 500px;
+    margin: auto;
+    text-align: center;
+}
+#table{
+    height: 260px;
+    background-color: rgb(5, 99, 5);
+}
+#mainGame{
+    padding-top:0.2em;
+
+}
+/* #bettingBlock{
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-around;
+}
+#betButton{
+    width: 20em; 
+}
+    */
+
+#bettingBlock {
+    padding: 1rem; /* Add some padding to the footer */
+    padding-left:0;
+    padding-bottom: 3px;
+}
+
+#betButton {
+    margin-right: 0.5rem; /* Add some margin to the right of the button */
+}
+
+
+#money, #moneyWord, #bet{
+    font-weight: 700;
+    font-size: xx-large;
+}
+#scores{
+    margin-bottom: 0;
+}
+#moneyWord, #bet{
+    display:inline-block;
+}
+#bet{
+    margin-left: 3em;
+}
+
+.chip:hover{
+    transform: translateY(-0.2em); /*moves slightly up*/
+}
+.chip{
+    transition: 0.2s;
+    margin-left: 0.5rem; /* Add some margin to the left of each chip */
+    cursor: pointer;
+    width: 70px;
+}
+#moneyDetails{
+    padding-top: 0;
+}
+/* styles.css */
+audio {
+    display: none;
+}

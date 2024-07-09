@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <title>Blackjack</title>
+</head>
+
+<body>
+    <audio id="background-audio" loop>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+    <section class="section" id = "mainGame">
+        <div class="container">
+            <div class="columns">
+                <div class="column">
+                    <div class="card-image">
+                        <div class="card-content" id="table">
+                            <div class="columns is-mobile is-gapless">
+                                <div class="column is-half">
+                                    <div class="card-left" id="playerBoard">
+
+                                    </div>
+                                </div>
+                                <div class="column is-half">
+                                    <div class="card-right" id = "dealerBoard">
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <header class="card-header">
+                        <p class="card-header-title" id = "titleCard">
+                            Welcome to Blackjack
+                            
+                        <div class="select is-rounded" id = "select">
+                            <select name="" id="playto">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="4">4</option>
+                                <option value="6">6</option>
+                                <option value="8">8</option>
+                            </select>
+                        </div>
+                        </p>
+                    </header>
+                    <div class="card-content">
+                        <div class="content">
+                            <h1 class="title is-1" id = "scores">
+                                <span id="playerScoreContainer"><span id="playerScore">0</span></span>
+                                <span id="dealerScoreContainer"><span id="dealerScore">0</span></span>
+                            </h1>
+                        </div>
+
+                    </div>
+                    <footer class="card-footer">
+                        <button class="is-info button card-footer-item" id="hitButton">Hit</button>
+                        <button class="is-info button card-footer-item" id="standButton">Stand</button>
+                        <button class="is-danger button card-footer-item" id="resetButton">Next Hand</button>
+
+                    </footer>
+                    <footer class="card-footer" id="bettingBlock">
+                        <div class="columns is-mobile is-vcentered is-gapless">
+                            <div class="column is-one-quarter">
+                                <button class="is-success button is-fullwidth" id="betButton">Bet</button>
+                                
+                            </div>
+                            <div class="column is-one-quarter">
+                                <button class="is-info button is-fullwidth" id="allInButton">All in</button>
+                                
+                            </div>
+                            
+                            <div class="column is-one-quarter">
+                                <button class="is-warning button is is-fullwidth" id="doubleButton">Double</button>
+                                
+                            </div>
+                            <div class="column is-one-quarter">
+                                <button class="is-danger button is-fullwidth" id="undoButton">Undo</button>
+                                
+                            </div>
+                            
+                            <div class="column">
+                                <div class="level">
+                                    <div class="level-item">
+                                        <img src="chips/5_chip.png" alt="" id="5_chip" class="chip">
+                                    </div>
+                                    <div class="level-item">
+                                        <img src="chips/10_chip.png" alt="" id="10_chip" class="chip">
+                                    </div>
+                                    <div class="level-item">
+                                        <img src="chips/25_chip.png" alt="" id="25_chip" class="chip">
+                                    </div>
+                                    <div class="level-item">
+                                        <img src="chips/50_chip.png" alt="" id="50_chip" class="chip">
+                                    </div>
+                                    <div class="level-item">
+                                        <img src="chips/100_chip.png" alt="" id="100_chip" class="chip">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                    <div id = "moneyDetails">
+                        <h2 id = "moneyWord">Money: $<span id = "money">1000</span></h2>
+                        <h2 id = "bet">Bet: $<span id = "betValue">0</span></h2>
+                    </div>
+                   
+                    
+                    
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
