@@ -1,2 +1,2 @@
 # Blackjack-
-My first take on coding blackjack on JavaScript
+One of my first JavaScript projects. Contains basic blackjack mechanics. Does not contain splitting and insurance.
